@@ -8,5 +8,6 @@ export default defineConfig({
     fs: {
       allow: ['..']
     }
-  }
+  },
+  base: '/github-user-search/'
 })
