@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body, p, input {
+  font-family: 'Space Mono', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  background-color: var(--bg-color);
+  color: var(--main-text-color);
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  transition: all .5s;
+  height: 100vh;
+}
+
+.content {
+  width: 100%;
+}
+
+.disable {
+  opacity: .5;
+}
+
+.no-bio {
+  opacity: .8;
+}
+
+.light {
+  --bg-color: rgb(246, 248, 255);
+  --container-color: rgb(254, 254, 254);
+  --second-text-color: rgb(34, 39, 49);
+  --main-text-color: rgb(75, 106, 155);
+  --button-color: rgb(0, 123, 255);
+  --not-available-color: rgb(163, 181, 205);
+  --error-color: hsl(0, 84%, 60%);
+  --filter-icon: none;
+}
+
+.dark {
+  --bg-color: rgb(20, 28, 46);
+  --container-color: rgb(31, 42, 72);
+  --second-text-color: rgb(255, 255, 255);
+  --main-text-color: rgb(255, 255, 255);
+  --button-color: rgb(0, 123, 255);
+  --not-available-color: rgb(142, 148, 164);
+  --error-color: rgb(239, 68, 68);
+  --filter-icon: brightness(5);
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    justify-content: center;
+  }
+
+  .content {
+    max-width: 600px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .content {
+    max-width: 800px;
+  }
+}
