@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.header h1 {
+  color: var(--second-text-color);
+}
+
+.header__button {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.header__button p {
+  color: var(--second-text-color);
+  margin-right: 15px;
+  font-size: 15px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
