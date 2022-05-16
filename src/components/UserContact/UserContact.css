@@ -1,0 +1,39 @@
+.contact__item {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.contact__item p, a {
+  margin-left: 15px;
+}
+
+.contact__item a {
+  color: var(--main-text-color);
+  text-decoration: none;
+}
+
+.contact__item a:hover {
+  text-decoration: underline;
+}
+
+.contact__item img {
+  filter: var(--filter-icon);
+}
+
+@media screen and (min-width: 768px) {
+  .contact {
+    display: grid;
+    grid-template-areas: 'first second';
+  }
+
+  .contact div:nth-child(3) {
+    grid-area: second-start;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contact {
+    margin-left: 130px;
+  }
+}
