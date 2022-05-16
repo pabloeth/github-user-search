@@ -1,0 +1,37 @@
+.stadistics {
+  background-color: var(--bg-color);
+  border-radius: 10px;
+  display: flex;
+  padding: 20px 30px;
+  justify-content: space-between;
+  text-align: center;
+  margin: 25px 0px;
+}
+
+.stadistics__item p:nth-child(1) {
+  font-size: 14px;
+}
+
+.stadistics__item p:nth-child(2) {
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--second-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .stadistics {
+    justify-content: flex-start;
+    gap: 120px;
+  }
+
+  .stadistics__item p {
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .stadistics {
+    margin-left: 130px;
+  }
+}
