@@ -8,6 +8,8 @@ export const HomePage = () => {
   const { theme } = useContext(ThemeContext)
   const [data, setData] = useState('octocat')
 
+  document.body.style.backgroundColor = theme.style === 'dark' ? '#141c2e' : '#f6f8ff'
+
   return (
     <main className={theme.style}>
       <div className='content'>
