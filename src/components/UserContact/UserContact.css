@@ -11,6 +11,9 @@
 .contact__item a {
   color: var(--main-text-color);
   text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .contact__item a:hover {
