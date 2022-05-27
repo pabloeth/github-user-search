@@ -60,12 +60,12 @@ main {
   }
 
   .content {
-    max-width: 600px;
+    width: 600px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .content {
-    max-width: 800px;
+    width: 800px;
   }
 }
