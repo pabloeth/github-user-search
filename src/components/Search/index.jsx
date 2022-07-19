@@ -37,6 +37,7 @@ export const Search = ({ setData }) => {
         placeholder='GitHub username...'
         className='search__text'
         onChange={handleChange}
+        autoComplete='off'
       />
       <p className={error ? 'show-error' : ''}>{error}</p>
       <input type='submit' value='Search' className='search__submit' />
