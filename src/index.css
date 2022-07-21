@@ -14,7 +14,6 @@ body, p, input {
 main {
   color: var(--main-text-color);
   padding: 20px;
-  transition: all .5s;
 }
 
 .content {

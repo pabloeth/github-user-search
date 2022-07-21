@@ -8,6 +8,7 @@
   width: 80px;
   height: 80px;
   border-radius: 50%;
+  animation: fadeIn 0.7s ease-in-out;
 }
 
 .description__info {
@@ -26,6 +27,15 @@
 
 .description__info a:hover {
   text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @media screen and (min-width: 768px) {
